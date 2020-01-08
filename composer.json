@@ -1,0 +1,16 @@
+{
+    "name" : "alfs18/ramverk1-module",
+    "description": "A me page for the ramverk1 course.",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {"Anax\\": "src/"}
+    },
+    "require": {
+        "alfs18/ramverk1-module": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
