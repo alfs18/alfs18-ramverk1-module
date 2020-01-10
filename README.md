@@ -5,9 +5,14 @@ Step one to install the module:
 
 `composer require`
 
+Then, to get the files, type:
 
-Then type:
+`rsync -av vendor/alfs18/ramverk1-module/config ./`
 
-`rsync -av vendor/ditt-vendor-namn/modul/config config/`
+`rsync -av vendor/alfs18/ramverk1-module/content ./`
 
-`rsync -av vendor/ditt-vendor-namn/modul/view view/`
+`rsync -av vendor/alfs18/ramverk1-module/src ./`
+
+`rsync -av vendor/alfs18/ramverk1-module/test ./`
+
+`rsync -av vendor/alfs18/ramverk1-module/view ./`
