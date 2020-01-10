@@ -1,6 +1,6 @@
 {
     "name" : "alfs18/ramverk1-module",
-    "description": "A me page for the ramverk1 course.",
+    "description": "A module for the ramverk1 course.",
     "license": "MIT",
     "minimum-stability": "beta",
     "prefer-stable": true,
