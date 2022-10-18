@@ -64,7 +64,8 @@ class CheckWeather
      * @param integer days
      * @return array all the dates
      */
-    public function getPastDays($days) {
+    public function getPastDays($days)
+    {
         $dates = [];
         for ($x = 1; $x <= $days; $x++) {
             $d=strtotime("-$x Days");
@@ -82,7 +83,8 @@ class CheckWeather
      * @param integer $dates all dates to be shown
      * @return array $sum the chosen summary
      */
-    public function getResult($info, $period, $result, $dates) {
+    public function getResult($info, $period, $result, $dates)
+    {
         if ($info == "all") {
             if ($period == "toCome") {
                 $sum = $result;
@@ -94,7 +96,7 @@ class CheckWeather
             } else {
                 $sum = [];
                 $count = 0;
-                foreach($result as $res) {
+                foreach ($result as $res) {
                     // $current = ": <br>Currently: " . $res["currently"]["summary"];
                     // $hour = "<br>Hourly: " . $res["hourly"]["summary"];
                     // $day = "<br>Daily: " . $res["daily"]["data"][0]["summary"];
@@ -134,7 +136,7 @@ class CheckWeather
             } else {
                 $sum = [];
                 $count = 0;
-                foreach($result as $res) {
+                foreach ($result as $res) {
                     if ($info == "daily") {
                         // $sum .= $dates[$count] . ": " . $res[$info]["data"][0]["summary"]  . "<br>";
                         $sum[$dates[$count]][$info] = $res[$info]["data"][0]["summary"];
