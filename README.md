@@ -1,3 +1,7 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/da774b3c3574d6af9470/maintainability)](https://codeclimate.com/github/alfs18/ramverk1-module/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/da774b3c3574d6af9470/test_coverage)](https://codeclimate.com/github/alfs18/ramverk1-module/test_coverage)
+
+
 Install the module
 ===================
 
