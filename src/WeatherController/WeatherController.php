@@ -38,7 +38,7 @@ class WeatherController implements ContainerInjectableInterface
      *
      * @return void
      */
-    public function initialize() : void
+    public function initialize(): void
     {
         // Use to initialise member variables.
         $this->db = "active";
@@ -55,13 +55,13 @@ class WeatherController implements ContainerInjectableInterface
      *
      * @return string
      */
-    public function indexActionGet() : object
+    public function indexActionGet(): object
     {
         // Add content as a view and then render the page.
         $title = "Kolla väder";
         $page = $this->di->get("page");
-        $request = $this->di->get("request");
-        $getAddr = $request->getServer("REMOTE_ADDR");
+        // $request = $this->di->get("request");
+        // $getAddr = $request->getServer("REMOTE_ADDR");
 
         $page->add("check-weather/start");
 
@@ -78,7 +78,7 @@ class WeatherController implements ContainerInjectableInterface
      *
      * @return object
      */
-    public function indexActionPost() : object
+    public function indexActionPost(): object
     {
         $title = "Kolla ip";
 
