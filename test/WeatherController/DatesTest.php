@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 class DatesTest extends TestCase
 {
     /**
-     * Test the function "getPastDays".
+     * Test the function "getPastDays"
      */
     public function testGetPastDates()
     {
